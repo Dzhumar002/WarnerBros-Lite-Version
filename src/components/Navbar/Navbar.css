@@ -1,0 +1,44 @@
+.navbar__container {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+
+  width: 100%;
+}
+.nav__list ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  list-style: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+.nav__home:hover,
+.nav__careers:hover,
+.nav__games:hover,
+.nav__news:hover,
+.nav__paly:hover {
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+
+.nav__logo {
+  margin-right: 29vw;
+  padding-bottom: 5vh;
+}
+.nav__inp {
+  display: flex;
+  gap: 2vw;
+}
+
+.login {
+  color: blue;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.login:hover {
+  text-shadow: 1px 1px 2px rgb(229, 207, 207), 0 0 1em blue, 0 0 0.2em blue;
+}
