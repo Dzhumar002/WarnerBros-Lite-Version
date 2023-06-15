@@ -8,13 +8,14 @@ const Login = () => {
   const { email, password, emailError, passwordError } = useSelector(
     (state) => state.auth
   );
-
-  const [showError, setShowError] = useState(false);
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleUser = () => {
+  const [showError, setShowError] = useState(false);
+
+  const handleUser = (event) => {
+    event.preventDefault();
+
     if (!email.trim() || !password.trim()) {
       setShowError(true);
       return;
@@ -28,7 +29,7 @@ const Login = () => {
   };
 
   return (
-    <div id="register__block">
+    <div id="login__block">
       <div id="login__conatiner">
         <div className="form-container">
           <p className="title"> Log In</p>
@@ -89,14 +90,8 @@ const Login = () => {
                 </a>
               </div>
             </div>
-            <button
-              className="sign"
-              onClick={() => {
-                handleUser();
-                navigate("/");
-              }}
-            >
-              Sign in
+            <button className="sign" onClick={handleUser}>
+              Log in
             </button>
           </form>
           <div className="social-message">
