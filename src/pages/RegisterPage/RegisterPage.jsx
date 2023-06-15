@@ -14,7 +14,9 @@ const RegisterPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleUser = () => {
+  const handleUser = (event) => {
+    event.preventDefault();
+
     if (!email.trim() || !password.trim()) {
       setShowError(true);
       return;
@@ -27,6 +29,7 @@ const RegisterPage = () => {
     };
     dispatch(hanleSingup(obj));
   };
+
   return (
     <div id="register__block">
       <div id="login__conatiner">
@@ -89,14 +92,8 @@ const RegisterPage = () => {
                 </a>
               </div>
             </div>
-            <button
-              className="sign"
-              onClick={() => {
-                handleUser();
-                // navigate("/");
-              }}
-            >
-              Sign in
+            <button className="sign" onClick={handleUser}>
+              register
             </button>
           </form>
           <div className="social-message">
