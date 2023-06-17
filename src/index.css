@@ -7,3 +7,7 @@ body {
   font-family: "Playfair", serif;
   font-family: "Roboto Condensed", sans-serif;
 }
+
+button {
+  cursor: pointer;
+}

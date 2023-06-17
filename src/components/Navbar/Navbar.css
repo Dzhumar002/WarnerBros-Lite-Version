@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   position: fixed;
-
+  margin-top: 3vh;
   width: 100%;
 }
 .nav__list ul {

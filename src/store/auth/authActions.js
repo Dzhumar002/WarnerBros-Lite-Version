@@ -58,3 +58,25 @@ export const handleLogin = createAsyncThunk(
       });
   }
 );
+
+export const authListener = createAsyncThunk(
+  "@auth/authListener",
+  async (_, { dispatch }) => {
+    await fire.auth().onAuthStateChanged((user) => {
+      if (user) {
+        dispatch(clearInputs());
+        dispatch(setUser(user?.email));
+      } else {
+        dispatch(setUser(""));
+      }
+    });
+  }
+);
+
+export const handleLogout = createAsyncThunk(
+  "@auth/handleLogout",
+  async (navigate) => {
+    await fire.auth().signOut();
+    navigate("/login");
+  }
+);

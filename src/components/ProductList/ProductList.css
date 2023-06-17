@@ -1,0 +1,17 @@
+#list__block {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+  gap: 14vh;
+  /* height: 140vh; */
+  margin-left: 10vw;
+  margin-right: 10vw;
+  flex-wrap: wrap;
+  padding-bottom: 18vh;
+}
+
+.filter__panel {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}

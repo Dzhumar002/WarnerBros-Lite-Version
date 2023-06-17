@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "cardImageOne": "https://cdn.wbgames.com/media/341/conversions/thumb_1562635156-sized.jpg",
+      "cardTitleOne": "Lego Harry Potter",
+      "cardImageTwo": "\thttps://cdn.wbgames.com/media/258/conversions/thumb_hover_1559759372-sized.jpg",
+      "cardTitleTwo": "Go to view Details",
+      "productsDetailsImg": "https://cdn.wbgames.com/media/235/conversions/hero_1559685498-desktop.jpg",
+      "productDetailsLeftImg": "https://cdn.wbgames.com/media/378/conversions/pack_1562966537-pack_sized.png",
+      "neonText": "A MAGICAL JOURNEY THROUGH ALL 7 YEARS OF HARRY POTTER ADVENTURES!",
+      "textOne": "Follow Harry, Hermione and Ron back to Hogwarts School of Witchcraft and Wizardry as they embark on an adventure spanning seven books and two whole games. From their first meetings in the Hogwarts dining hall to conquering their greatest foes, you’ll have to help the characters overcome obstacles and solve puzzles at every step.",
+      "textTwo": "The LEGO® Harry Potter Collection combines newly remastered versions of the classic PS3 titles LEGO® Harry Potter: Years 1-4 and LEGO® Harry Potter: Years 5-7 into a single package along with the Character Pack and Spell Pack DLCs.",
+      "minImageOne": "https://cdn.wbgames.com/media/238/conversions/WB_HUB_1200x678_Lego_Harry_Potter_Collection_1_190604-thumb.jpg",
+      "minImageTwo": "https://cdn.wbgames.com/media/239/conversions/WB_HUB_1200x678_Lego_Harry_Potter_Collection_2_190604-thumb.jpg",
+      "minImagethree": "https://cdn.wbgames.com/media/240/conversions/WB_HUB_1200x678_Lego_Harry_Potter_Collection_3_190604-thumb.jpg",
+      "minImageFour": "https://cdn.wbgames.com/media/241/conversions/WB_HUB_1200x678_Lego_Harry_Potter_Collection_4_190604-thumb.jpg",
+      "id": 1
+    }
+  ]
+}
