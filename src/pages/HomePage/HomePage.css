@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://cdn.wbgames.com/static/home-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.home_games{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.add_info{
+    background: linear-gradient(35deg,rgb(8 74 116 / 86%),rgba(3,21,30,.6) 33%,rgba(3,21,30,.6) 66%,rgba(8,74,116,.6));
+    position: relative;
+    margin-left: auto;
+    margin-right: 0em;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    padding-bottom: 1em;
+    margin-bottom: 10%;
+}
+
+.info_img{
+    margin: 2% 10%;
+    width: 75%;
+    
+}
+.add_info_btn{
+    margin: 0 auto 5px;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 2px 5%;
+    color: #09f;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+}
+
+.add_info_btn:hover{
+    background-color: #09f;
+    color: #efefef;
+    border: none;
+    transition: 0.3s;
+}
+
+.demo_switch {
+    position: relative;
+    margin: 0 0.1em;
+    width: 14vw; 
+    max-width: 200px;
+    height: 0.3em; 
+    background-color: rgba(128, 128, 128, 0.321);
+    border: none
+}
+
+.demo_switch:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 8px rgba(53, 150, 255, 0.54);
+
+}
+
+.clicked{
+    background-color: white;
+    box-shadow: 0px 0px 20px 8px rgba(53, 150, 255, 0.54);
+}
