@@ -1,0 +1,13 @@
+#carusel__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  border-bottom: 1px solid white;
+}
+
+.carusel__img {
+  -webkit-box-shadow: 9px 10px 8px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 9px 10px 8px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 9px 10px 8px 2px rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,160 @@
+#playtest__container {
+  background: linear-gradient(-45deg, #000000, #161212, #0f1313, #140d0d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.play__tite {
+  display: flex;
+  justify-content: center;
+}
+
+.play__tite h2 {
+  animation: blicker 1.5s infinite alternate;
+  color: #fff;
+  text-shadow:
+        /* белый свет */ 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff,
+    /* зеленый свет */ 0 0 11px #0fa, 0 0 20px #0fa, 0 0 30px #0fa,
+    0 0 55px #0fa, 0 0 80px #0fa;
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-top: 6vh;
+}
+
+@keyframes blicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #0fa,
+      0 0 20px rgb(25, 241, 39), 0 0 30px rgb(64, 246, 76),
+      0 0 55px rgb(27, 241, 148), 0 0 80px rgb(54, 234, 126);
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+.play__text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 16vw;
+}
+
+.play__text h2 {
+  font-size: 2.6rem;
+  color: white;
+  font-weight: 500;
+}
+
+.pone {
+  font-weight: 600;
+}
+
+.play__sign p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.playmini__text {
+  line-height: 4vh;
+}
+
+.play__sign a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.note__ul {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.play__sign a:hover {
+  color: rgb(68, 90, 234);
+}
+
+.note p {
+  font-size: 1.4rem;
+}
+
+.note__ul {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.acor-container {
+  margin: 20px 0;
+}
+.acor-container .acor-body {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  height: 0;
+  color: white;
+  /* background-color: #bfe2ff; */
+  line-height: 18px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  transition: color 0.5s, padding 0.5s;
+  overflow: hidden;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+.acor-container .acor-body p {
+  margin: 0 0 10px;
+}
+.acor-container label {
+  cursor: pointer;
+  display: block;
+  padding: 15px 20px;
+  width: 100%;
+  font-weight: 300;
+  box-sizing: border-box;
+  z-index: 100;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  margin: 0 0 5px;
+  transition: color 0.35s;
+}
+.acor-container label:hover {
+  color: #fff;
+}
+.acor-container input {
+  display: none;
+}
+.acor-container label:before {
+  content: "\276F";
+  float: right;
+}
+.acor-container input:checked + label {
+  color: #fff;
+}
+.acor-container input:checked + label:before {
+  transition: transform 0.35s;
+  transform: rotate(90deg);
+}
+.acor-container input:checked + label + .acor-body {
+  height: auto;
+  margin-top: -5px;
+  color: #000;
+  padding: 20px 30px 10px;
+}
+
+label {
+  color: white;
+}
+
+.secondtext__block h3 {
+  color: white;
+  font-size: 1.5rem;
+}
