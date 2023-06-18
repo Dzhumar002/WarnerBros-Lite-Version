@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-evenly;
   position: fixed;
-  margin-top: 3vh;
+  margin-top: 5vh;
   width: 100%;
+  z-index: 1;
 }
 .nav__list ul {
   display: flex;

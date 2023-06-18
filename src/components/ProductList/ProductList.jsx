@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import "../ProductList/ProductList.css";
+import Filter from "../FilterThing/Filter";
 // import { useDispatch, useSelector } from "react-redux";
 // import { getProducts } from "../../store/products/productsActions";
 
@@ -15,7 +16,7 @@ const ProductList = () => {
   return (
     <div>
       <div className="filter__panel">
-        <span>Some filters things</span>
+        <Filter />
       </div>
 
       <div id="list__block">
