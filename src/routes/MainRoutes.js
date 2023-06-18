@@ -24,9 +24,10 @@ const MainRoutes = () => {
     { link: "*", element: <NotFoundPage />, id: 6 },
     { link: "/playtest", element: <PlayTestPage />, id: 7 },
     { link: "/cart", element: <CartPage />, id: 8 },
+    { link: "/admin", element: <Admin />, id: 9 },
   ];
 
-  const PRIVATE_ROUTES = [{ link: "/admin", element: <Admin />, id: 1 }];
+  // const PRIVATE_ROUTES = [{ link: "/admin", element: <Admin />, id: 1 }];
 
   return (
     <>
@@ -34,7 +35,7 @@ const MainRoutes = () => {
         {PUBLIC_ROUTES.map((item) => (
           <Route path={item.link} element={item.element} key={item.id} />
         ))}
-        {user &&
+        {/* {user &&
           PRIVATE_ROUTES.map((item) => (
             <Route
               path={item.link}
@@ -43,7 +44,7 @@ const MainRoutes = () => {
                 user === ADMIN ? item.element : <Navigate replace to="*" />
               }
             />
-          ))}
+          ))} */}
       </Routes>
     </>
   );

@@ -9,3 +9,7 @@
   background-repeat: no-repeat;
   background-image: url("https://wallpapercave.com/uwp/uwp3536521.jpeg");
 }
+
+.pagination__block {
+  padding-bottom: 6vh;
+}

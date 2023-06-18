@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ProductList from "../../components/ProductList/ProductList";
 import "../GamesPage/GamePage.css";
 import Carusel from "../../components/CaruselGames/Carusel";
+import Pagination from "../../components/Pagination/Pagination";
 // import { useDispatch, useSelector } from "react-redux";
 // import { getProducts } from "../../store/products/productsActions";
 const GamePage = () => {
@@ -18,6 +19,9 @@ const GamePage = () => {
 
       <div className="products__block">
         <ProductList />
+        <div className="pagination__block">
+          <Pagination />
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,109 @@
 .notfound__page {
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/922/650/372/astronaut-space-fantasy-art-planet-wallpaper-preview.jpg");
+  background-image: url("https://windowscustomization.com/wp-content/uploads/2019/10/Lost-in-Space.gif");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   /* width: 140vw; */
+}
+
+.notfoundtext h2 {
+  padding: 0%;
+  margin: 0;
+  padding-top: 15vh;
+  margin-left: 16vw;
+  animation: flicker 1.5s infinite alternate;
+  color: #f0f0f0;
+  text-shadow:
+      /* белый свет */ 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff,
+    /* зеленый свет */ 0 0 11px #0fa, 0 0 20px #0fa, 0 0 30px #0fa,
+    0 0 55px #0fa, 0 0 80px #0fa;
+  font-weight: 800;
+  font-size: 4.5rem;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #0fa,
+      0 0 20px rgb(75, 52, 221), 0 0 30px rgb(33, 16, 220),
+      0 0 55px rgb(53, 73, 225), 0 0 80px rgb(18, 38, 220);
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+.notfoundtext2 {
+  display: flex;
+  justify-content: end;
+  margin-right: 5vw;
+  padding-top: 15vh;
+  animation: flicker 1.5s infinite alternate;
+  color: #f0f0f0;
+  text-shadow:
+      /* белый свет */ 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff,
+    /* зеленый свет */ 0 0 11px rgb(0, 255, 68), 0 0 20px rgb(49, 247, 85),
+    0 0 30px rgb(28, 245, 79), 0 0 55px rgb(23, 240, 77),
+    0 0 80px rgb(75, 245, 86);
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+#flyhome {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+}
+
+#flyhome svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+#flyhome span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+#flyhome:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+#flyhome:hover span {
+  transform: translateX(7px);
+}
+
+.notfound__button {
+  display: flex;
+  justify-content: center;
+}
+
+.notfound__main {
+  display: flex;
+  justify-content: end;
+  margin-right: 9vw;
+  animation: flicker 1.5s infinite alternate;
+  color: #f0f0f0;
+  text-shadow:
+      /* белый свет */ 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff,
+    /* зеленый свет */ 0 0 11px #0fa, 0 0 20px #0fa, 0 0 30px #0fa,
+    0 0 55px #0fa, 0 0 80px #0fa;
+  font-weight: 800;
+  font-size: 2.4rem;
 }
