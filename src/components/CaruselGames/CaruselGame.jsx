@@ -1,5 +1,5 @@
 import React from "react";
-import "../CaruselGames/Carusel.css";
+import "../CaruselGames/CaruselGame.css";
 const Carusel = () => {
   return (
     <div id="carusel__block">

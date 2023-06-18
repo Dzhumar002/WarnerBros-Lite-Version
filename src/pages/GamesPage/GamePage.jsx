@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ProductList from "../../components/ProductList/ProductList";
 import "../GamesPage/GamePage.css";
-import Carusel from "../../components/CaruselGames/Carusel";
+import Carusel from "../../components/CaruselGames/CaruselGame";
 import Pagination from "../../components/Pagination/Pagination";
 // import { useDispatch, useSelector } from "react-redux";
 // import { getProducts } from "../../store/products/productsActions";
