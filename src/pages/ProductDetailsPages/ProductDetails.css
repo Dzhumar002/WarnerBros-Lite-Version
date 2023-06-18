@@ -169,6 +169,7 @@ img {
 .edit__button {
   margin-left: 13vw;
   margin-top: 5vh;
+  margin-bottom: 15vh;
 }
 
 .send__cart {
@@ -215,6 +216,7 @@ img {
   font-weight: 800;
   font-size: 3.2rem;
   margin-top: 12vh;
+  margin-bottom: 5vh;
 }
 
 @keyframes flicker {

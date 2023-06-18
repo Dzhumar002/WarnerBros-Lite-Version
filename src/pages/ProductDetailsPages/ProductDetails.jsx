@@ -1,26 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ProductDetails.css";
 import EditButton from "../../components/editButton/EditButton";
 import ButtonCart from "../../components/ButtonCart/ButtonCart";
+import { useNavigate, useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+
 import { ADMIN } from "../../helpers/consts";
-import { useSelector } from "react-redux";
+import {
+  deleteProduct,
+  getOneProduct,
+} from "../../store/products/productsActions";
+
 const ProductDetails = () => {
+  const { id } = useParams();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { productDetails } = useSelector((state) => state.products);
   const { user } = useSelector((state) => state.auth);
+  // const [checkProduct, setCheckProduct] = useState(false);
+
+  useEffect(() => {
+    dispatch(getOneProduct(id));
+  }, [id]);
+
   return (
     <div id="details__container">
       <div className="head__image">
         <img
           style={{ width: "100%" }}
-          src="https://cdn.wbgames.com/media/353/conversions/hero_1562712840-desktop.jpg"
+          src={productDetails?.productsDetailsImg}
           alt="head"
         />
       </div>
       <div className="content__container">
         <div className="left__side">
-          <img
-            src="https://cdn.wbgames.com/media/356/conversions/pack_1562713844-pack_sized.png"
-            alt="image"
-          />
+          <img src={productDetails?.productDetailsLeftImg} alt="image" />
 
           <button id="button__bat">
             <span>PLAY NOW</span>
@@ -67,8 +81,16 @@ const ProductDetails = () => {
 
           {user === ADMIN ? (
             <>
-              <button id="button__blue"> Delete Product</button>
-              <div className="edit__button">
+              <button
+                onClick={() => {
+                  dispatch(deleteProduct(id));
+                  navigate("/game");
+                }}
+                id="button__blue"
+              >
+                Delete Product
+              </button>
+              <div onClick={() => navigate("/edit")} className="edit__button">
                 <EditButton />
               </div>
             </>
@@ -82,50 +104,30 @@ const ProductDetails = () => {
         </div>
         <div className="right__side">
           <div>
-            <h3 className="neon__text">
-              JOIN NOW TODAY AND UNITE YOUR JUSTICE LEAGUE!
-            </h3>
-            <p>
-              Who’s in your Justice League? Join your favorite DC Super Heroes &
-              Villains in the best fighting game on mobile. Assemble a team of
-              heroes like Batman, Flash & Wonder Woman to combat the forces
-              against you. Master new combos and crush opponents in dynamic
-              3-on-3 battles. Upgrade your Super Heroes with special powers as
-              you fight your way through the game. Become a champion by
-              collecting gear for your characters and dominating your foes in
-              PvP contests. Every battle will define you—join the fight and
-              become the ultimate DC champion!
-            </p>
+            <h3 className="neon__text">{productDetails?.neonText}</h3>
+            <p>{productDetails?.textOne}</p>
             <br />
-            <p>
-              • Unleash epic combos on your opponents using Superman’s heat
-              vision, The Flash’s lightning kick, Harley Quinn’s cupcake bomb
-              and much more • Take your battles to the next level—inflict
-              massive damage using your favorite DC characters’ super moves •
-              Earn rewards from each fight to customize your Super Heroes with
-              powerful gear, and collect special characters like Armored
-              Superman, Arkham Knight Batman and much more • Team up with
-              friends and assemble an unstoppable League! Together you can
-              prevent the collection of worlds and defeat the ultimate boss,
-              Brainiac. • Be social—chat with friends, donate hero shards,
-              participate in Raids, and more!
-            </p>
+            <p>{productDetails?.textTwo}</p>
 
             <div className="image__block">
               <img
-                src="https://cdn.wbgames.com/media/357/conversions/WB_HUB_1200x678_IJ2_Mobile_1_190709-thumb.jpg"
+                style={{ maxHeight: "35vh" }}
+                src={productDetails?.minImageOne}
                 alt="firts"
               />
               <img
-                src="https://cdn.wbgames.com/media/358/conversions/WB_HUB_1200x678_IJ2_Mobile_2_190709-thumb.jpg"
+                style={{ maxHeight: "35vh" }}
+                src={productDetails?.minImageTwo}
                 alt="second"
               />
               <img
-                src="https://cdn.wbgames.com/media/359/conversions/WB_HUB_1200x678_IJ2_Mobile_3_190709-thumb.jpg"
+                style={{ maxHeight: "35vh" }}
+                src={productDetails?.minImagethree}
                 alt="third"
               />
               <img
-                src="https://cdn.wbgames.com/media/360/conversions/WB_HUB_1200x678_IJ2_Mobile_4_190709-thumb.jpg"
+                style={{ maxHeight: "35vh" }}
+                src={productDetails?.minImageFour}
                 alt="fourth"
               />
             </div>
