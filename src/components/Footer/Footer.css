@@ -1,0 +1,35 @@
+.footer__block {
+  display: block;
+  background-color: rgb(23, 19, 19);
+  border-top: 1px solid white;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__content span {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footer__content {
+  display: flex;
+  margin-top: 6vh;
+  gap: 2vw;
+}
+
+.footer__links {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  padding-bottom: 5vh;
+}
+
+.footer__links a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: blue;
+}

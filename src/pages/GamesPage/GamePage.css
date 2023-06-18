@@ -1,0 +1,15 @@
+.head__block {
+  background-image: url("https://wallpapercave.com/wp/wp8970843.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products__block {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://wallpapercave.com/uwp/uwp3536521.jpeg");
+}
+
+.pagination__block {
+  padding-bottom: 6vh;
+}

@@ -1,0 +1,8 @@
+.admin__page {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn.wallpapersafari.com/57/4/4Z09VQ.jpg");
+  display: flex;
+  justify-content: center;
+  height: 132vh;
+}

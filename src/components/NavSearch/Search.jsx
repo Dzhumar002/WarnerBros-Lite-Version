@@ -7,8 +7,8 @@ const Search = () => {
         <input type="text" placeholder="Search" name="text" className="input" />
         <svg
           fill="#000000"
-          width="20px"
-          height="20px"
+          width="2vw"
+          height="2vh"
           viewBox="0 0 1920 1920"
           xmlns="http://www.w3.org/2000/svg"
         >
