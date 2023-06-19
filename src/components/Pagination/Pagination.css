@@ -7,8 +7,8 @@
   display: inline-block;
 }
 
-.pagination a {
-  color: #000000;
+.pagination span {
+  color: #fff;
   float: left;
   padding: 8px 16px;
   text-decoration: none;
@@ -18,12 +18,12 @@
   font-size: 20px;
 }
 
-.pagination a.active {
+.pagination span.active {
   background-color: #5ce499;
   color: #080707;
   border: 1px solid #24e270;
 }
 
-.pagination a:hover:not(.active) {
+.pagination span:hover:not(.active) {
   background-color: #ddd;
 }

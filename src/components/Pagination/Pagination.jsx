@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Pagination/Pagination.css";
-const Pagination = () => {
+const Pagination = ({ count, page, handleChange }) => {
+  console.log(count);
+
   return (
     <div>
       <div className="center">
         <div className="pagination">
-          <a href="#">&laquo;</a>
-          <a href="#">1</a>
-          <a href="#" className="active">
-            2
-          </a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">6</a>
-          <a href="#">&raquo;</a>
+          <span>&laquo;</span>
+          {count.map((item) => (
+            <span
+              href="#"
+              key={item}
+              className={page === item ? "active" : ""}
+              onClick={() => handleChange(item)}
+            >
+              {item}
+            </span>
+          ))}
+          <span href="#">&raquo;</span>
         </div>
       </div>
     </div>
