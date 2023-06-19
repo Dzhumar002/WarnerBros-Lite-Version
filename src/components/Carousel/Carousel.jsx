@@ -127,22 +127,26 @@ const Carousel = () => {
                 <h3><i>FEATURED NEWS</i></h3>
                 <div className="featured_cards">
                     <div className="img_left">
-                        <div className='featured_items'>
-                    <div id="border"></div>
+                            <div className="featured_item">
+                        <div id="border"></div>
                             <div className="meta">
-                            <img src="https://cdn.wbgames.com/media/545/conversions/thumb_hover_1680552441-sized.jpg" alt="" />
+                                <div className="meta_img">
+                                    <img src="https://cdn.wbgames.com/media/545/conversions/thumb_hover_1680552441-sized.jpg" alt="" />
+                                </div>        
                             <div className="feat_items_content">
                                 <p>Harry Potter: Magic Awakened </p>
                                 <h4>Harry Potter: Magic Awakened Soft Launch Announcement</h4>
                                 <p>Read More {">>"}</p>
                             </div>
                             </div>
-                    <div id="border"></div>
-                        </div>
-                        <div className='featured_items'>
+                        <div id="border"></div>
+                            </div>
+                        <div className='featured_item'>
                     <div id="border"></div>
                             <div className="meta">
-                            <img src="https://cdn.wbgames.com/media/455/conversions/thumb_hover_1598489939-sized.jpg" alt="" />
+                                <div className="meta_img">
+                                    <img src="https://cdn.wbgames.com/media/455/conversions/thumb_hover_1598489939-sized.jpg" alt="" />
+                                </div>        
                             <div className="feat_items_content">
                                 <p>Suicide Squad: Kill the Justice League </p>
                                 <h4>WARNER BROS. GAMES AND DC ANNOUNCE SUICIDE SQUAD: KILL THE JUSTICE LEAGUE</h4>
@@ -153,10 +157,12 @@ const Carousel = () => {
                         </div>
                     </div>
                     <div className="img_right">
-                        <div className='featured_items'>
+                        <div className='featured_item'>
                     <div id="border"></div>
-                            <div className="meta">
-                            <img src="https://cdn.wbgames.com/media/450/conversions/thumb_hover_1598488647-sized.jpg" alt="" />
+                            <div className="meta right">
+                                <div className="meta_img">
+                                    <img src="https://cdn.wbgames.com/media/450/conversions/thumb_hover_1598488647-sized.jpg" alt="" />
+                                </div>        
                             <div className="feat_items_content">
                                 <p>Gotham Knights</p>
                                 <h4>WARNER BROS. GAMES AND DC ANNOUNCE  GOTHAM KNIGHTS</h4>
@@ -165,10 +171,12 @@ const Carousel = () => {
                             </div>
                     <div id="border"></div>
                         </div>
-                        <div className='featured_items'>
+                        <div className='featured_item'>
                     <div id="border"></div>
-                            <div className="meta">
-                            <img src="https://cdn.wbgames.com/media/446/conversions/thumb_hover_1588791600-sized.jpg" alt="" />
+                            <div className="meta right">
+                                <div className="meta_img">
+                                    <img src="https://cdn.wbgames.com/media/446/conversions/thumb_hover_1588791600-sized.jpg" alt="" />
+                                </div>        
                             <div className="feat_items_content">
                                 <p>Mortal Kombat 11: Aftermath </p>
                                 <h4>Official Mortal Kombat 11: Aftermath Announcement</h4>
