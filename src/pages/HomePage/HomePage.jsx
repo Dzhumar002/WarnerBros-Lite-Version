@@ -36,7 +36,7 @@ const HomePage = () => {
 const [currentIndex, setCurrentIndex] = useState(0);
 
 useEffect(()=>{
-console.log(currentIndex);
+// console.log(currentIndex);
 },[goToSlide])
 
 function goToSlide(slideIndex){
