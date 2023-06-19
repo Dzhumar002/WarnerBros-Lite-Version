@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "../AddForm/AddForm.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import {
   editProduct,
   getOneProduct,
 } from "../../store/products/productsActions";
-const EditForm = ({ productDetails }) => {
+const EditForm = () => {
+  const { productDetails } = useSelector((state) => state.products);
+
   const [cardImageOne, setCardImageOne] = useState(productDetails.cardImageOne);
   const [cardTitleOne, setCardTitleOne] = useState(productDetails.cardTitleOne);
   const [cardImageTwo, setCardImageTwo] = useState(productDetails.cardImageTwo);
@@ -26,6 +28,7 @@ const EditForm = ({ productDetails }) => {
     productDetails.minImagethree
   );
   const [minImageFour, setMinImageFour] = useState(productDetails.minImageFour);
+
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -51,26 +54,27 @@ const EditForm = ({ productDetails }) => {
   }, [productDetails]);
 
   console.log(productDetails);
+
   const handleEdit = (event) => {
     event.preventDefault();
 
-    if (
-      !cardImageOne.trim() ||
-      !cardTitleOne.trim() ||
-      !cardImageTwo.trim() ||
-      !cardPrice.trim() ||
-      !productDetailsLeftImg.trim() ||
-      !productsDetailsImg.trim() ||
-      !neonText.trim() ||
-      !textOne.trim() ||
-      !textTwo.trim() ||
-      !minImageOne.trim() ||
-      !minImageTwo.trim() ||
-      !minImagethree.trim() ||
-      !minImageFour.trim()
-    ) {
-      alert("заполните все поля");
-    }
+    // if (
+    //   !cardImageOne.trim() ||
+    //   !cardTitleOne.trim() ||
+    //   !cardImageTwo.trim() ||
+    //   !cardPrice.trim() ||
+    //   !productsDetailsImg.trim() ||
+    //   !productDetailsLeftImg.trim() ||
+    //   !neonText.trim() ||
+    //   !textOne.trim() ||
+    //   !textTwo.trim() ||
+    //   !minImageOne.trim() ||
+    //   !minImageTwo.trim() ||
+    //   !minImagethree.trim() ||
+    //   !minImageFour.trim()
+    // ) {
+    //   alert("заполните все поля");
+    // }
     let editedProduct = {
       cardImageOne,
       cardTitleOne,
@@ -85,6 +89,7 @@ const EditForm = ({ productDetails }) => {
       minImageTwo,
       minImagethree,
       minImageFour,
+      id: productDetails.id,
     };
     // console.log(newProduct);
     dispatch(editProduct(editedProduct));
@@ -235,7 +240,7 @@ const EditForm = ({ productDetails }) => {
                 placeholder="Product Details min Img 4"
               />
             </div>
-            <div className="btn">
+            <div className="btn__addform">
               <button onClick={handleEdit} className="button1">
                 save Edit changes
               </button>

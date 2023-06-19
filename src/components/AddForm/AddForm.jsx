@@ -62,7 +62,7 @@ const AddForm = () => {
   };
 
   return (
-    <div>
+    <div id="addform__container">
       <div className="card__add">
         <div className="card2">
           <form className="form">
@@ -192,7 +192,7 @@ const AddForm = () => {
                 placeholder="Product Details min Img 4"
               />
             </div>
-            <div className="btn">
+            <div className="btn__addform">
               <button onClick={handleProduct} className="button1">
                 add new
               </button>

@@ -33,10 +33,10 @@
       "id": 2
     },
     {
-      "cardImageOne": "\thttps://cdn.wbgames.com/media/125/conversions/thumb_1550014810-sized.jpg",
+      "cardImageOne": "https://cdn.wbgames.com/media/125/conversions/thumb_1550014810-sized.jpg",
       "cardTitleOne": "Lego: Marvel Collection",
-      "cardImageTwo": "\thttps://cdn.wbgames.com/media/228/conversions/thumb_hover_1556743460-sized.jpg",
-      "cardPrice": "25.33$",
+      "cardImageTwo": "https://cdn.wbgames.com/media/228/conversions/thumb_hover_1556743460-sized.jpg",
+      "cardPrice": "44.33$",
       "productsDetailsImg": "https://cdn.wbgames.com/media/173/conversions/hero_1551826307-desktop.jpg",
       "productDetailsLeftImg": "https://cdn.wbgames.com/media/255/conversions/pack_1559697295-pack_sized.png",
       "neonText": "MARVEL’S MIGHTIEST SUPER HEROES ASSEMBLE",
@@ -51,8 +51,8 @@
     {
       "cardImageOne": "https://cdn.wbgames.com/media/120/conversions/thumb_1549824185-sized.jpg",
       "cardTitleOne": "Game of Thrones Conquest",
-      "cardImageTwo": "\thttps://cdn.wbgames.com/media/227/conversions/thumb_hover_1556742717-sized.jpg",
-      "cardPrice": "26.99$",
+      "cardImageTwo": "https://cdn.wbgames.com/media/227/conversions/thumb_hover_1556742717-sized.jpg",
+      "cardPrice": "36.99$",
       "productsDetailsImg": "https://cdn.wbgames.com/media/171/conversions/hero_1551814181-desktop.jpg",
       "productDetailsLeftImg": "https://cdn.wbgames.com/media/172/conversions/pack_1551815389-pack_sized.png",
       "neonText": "RULE THE SEVEN KINGDOMS",
@@ -132,7 +132,7 @@
       "cardImageOne": "https://cdn.wbgames.com/media/31/conversions/thumb_1549325657-sized.jpg",
       "cardTitleOne": "LEGO® Worlds",
       "cardImageTwo": "https://cdn.wbgames.com/media/245/conversions/thumb_hover_1559690107-sized.jpg",
-      "cardPrice": "23.88$",
+      "cardPrice": "100$",
       "productsDetailsImg": "https://cdn.wbgames.com/media/291/conversions/hero_1559775855-desktop.jpg",
       "productDetailsLeftImg": "https://cdn.wbgames.com/media/293/conversions/pack_1559776407-pack_sized.png",
       "neonText": "AN EDITABLE WORLD MADE ENTIRELY OF LEGO® BRICKS!",

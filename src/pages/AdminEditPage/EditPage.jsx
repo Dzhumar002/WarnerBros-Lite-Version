@@ -6,7 +6,7 @@ const EditPage = () => {
   return (
     <div className="edit__page">
       <div className="editForm">
-        <EditForm productDetails={ProductDetails} />
+        <EditForm />
       </div>
     </div>
   );
