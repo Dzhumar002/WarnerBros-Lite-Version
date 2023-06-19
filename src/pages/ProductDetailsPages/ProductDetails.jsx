@@ -76,7 +76,7 @@ const ProductDetails = () => {
           </a>
 
           <div id="price__block">
-            <button id="price__button"> price: 23.12$</button>
+            <button id="price__button"> {productDetails?.cardPrice}</button>
           </div>
 
           {user === ADMIN ? (
@@ -111,22 +111,22 @@ const ProductDetails = () => {
 
             <div className="image__block">
               <img
-                style={{ maxHeight: "35vh" }}
+                style={{ maxHeight: "215px", maxWidth: "450px" }}
                 src={productDetails?.minImageOne}
                 alt="firts"
               />
               <img
-                style={{ maxHeight: "35vh" }}
+                style={{ maxHeight: "215px" }}
                 src={productDetails?.minImageTwo}
                 alt="second"
               />
               <img
-                style={{ maxHeight: "35vh" }}
+                style={{ maxHeight: "215px" }}
                 src={productDetails?.minImagethree}
                 alt="third"
               />
               <img
-                style={{ maxHeight: "35vh" }}
+                style={{ maxHeight: "215px" }}
                 src={productDetails?.minImageFour}
                 alt="fourth"
               />

@@ -53,33 +53,34 @@ const Navbar = () => {
 
         <div className="nav__inp">
           <Search />
-
-          {user ? (
-            <>
-              <p
-                className="login"
-                onClick={() => {
-                  dispatch(handleLogout());
-                  dispatch(clearInputs());
-                  navigate("/");
-                }}
-              >
-                Log out
-              </p>
-            </>
-          ) : (
-            <>
-              <p
-                className="login"
-                onClick={() => {
-                  navigate("/login");
-                  dispatch(clearInputs());
-                }}
-              >
-                Log in
-              </p>
-            </>
-          )}
+          <div id="login__logout">
+            {user ? (
+              <>
+                <p
+                  className="login"
+                  onClick={() => {
+                    dispatch(handleLogout());
+                    dispatch(clearInputs());
+                    navigate("/");
+                  }}
+                >
+                  Log out
+                </p>
+              </>
+            ) : (
+              <>
+                <p
+                  className="login"
+                  onClick={() => {
+                    navigate("/login");
+                    dispatch(clearInputs());
+                  }}
+                >
+                  Log in
+                </p>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>
