@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./ProductDetails.css";
 import EditButton from "../../components/editButton/EditButton";
 import ButtonCart from "../../components/ButtonCart/ButtonCart";
@@ -10,6 +10,8 @@ import {
   deleteProduct,
   getOneProduct,
 } from "../../store/products/productsActions";
+import { calcTotalPrice } from "../../helpers/functions";
+import { getCart } from "../../store/cart/cartSlice";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -22,6 +24,49 @@ const ProductDetails = () => {
   useEffect(() => {
     dispatch(getOneProduct(id));
   }, [id]);
+
+  const [checkProduct, setCheckProduct] = useState(false);
+
+  const addProductToCart = (product) => {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if (!cart) {
+      cart = {
+        products: [],
+        totalPrice: 0,
+      };
+    }
+    let newProduct = {
+      item: product,
+      count: 1,
+      subPrice: +product.price,
+    };
+
+    let productToFind = cart.products.filter(
+      (elem) => elem.item.id === product.id
+    );
+
+    if (productToFind.length == 0) {
+      cart.products.push(newProduct);
+    } else {
+      cart.products = cart.products.filter(
+        (elem) => elem.item.id !== product.id
+      );
+    }
+
+    cart.totalPrice = calcTotalPrice(cart.products);
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    setCheckProduct((prev) => !prev);
+    dispatch(getCart(cart.products));
+  };
+
+  const checkProductInCart = () => {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    const check = cart.products.find(
+      (elem) => elem.item.id === productDetails.id
+    );
+    return check;
+  };
 
   return (
     <div id="details__container">

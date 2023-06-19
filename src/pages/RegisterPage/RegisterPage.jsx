@@ -35,7 +35,7 @@ const RegisterPage = () => {
       <div id="login__conatiner">
         <div className="form-container">
           <p className="title"> Registration </p>
-          <form className="form">
+          <form className="form__reg">
             <div className="input-group">
               <label htmlFor="username">Username</label>
               <input

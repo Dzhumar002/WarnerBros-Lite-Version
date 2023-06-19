@@ -2,9 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import {
   clearErrors,
   clearInputs,
-  setEmail,
   setEmailError,
-  setPassword,
   setPasswordError,
   setUser,
 } from "./authSlice";

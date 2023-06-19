@@ -33,7 +33,7 @@ const Login = () => {
       <div id="login__conatiner">
         <div className="form-container">
           <p className="title"> Log In</p>
-          <form className="form">
+          <form className="form__lgin">
             <div className="input-group">
               <label htmlFor="username">Username</label>
               <input

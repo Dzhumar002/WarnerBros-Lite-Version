@@ -16,7 +16,7 @@ const GamePage = () => {
   const [page, setPage] = useState(1);
 
   const itemsPerPage = 6;
-  console.log(Math.ceil(products.length / itemsPerPage));
+  // console.log(Math.ceil(products.length / itemsPerPage));
   const count = [];
   for (let i = 1; i <= Math.ceil(products.length / itemsPerPage); i++) {
     count.push(i);
@@ -27,7 +27,6 @@ const GamePage = () => {
     const end = begin + itemsPerPage;
     return products.slice(begin, end);
   }
-  console.log(currentData);
   const handleChange = (p) => {
     setPage(p);
   };

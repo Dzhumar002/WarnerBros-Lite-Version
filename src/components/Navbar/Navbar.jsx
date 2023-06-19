@@ -34,7 +34,6 @@ const Navbar = () => {
             <li onClick={() => navigate("/game")} className="nav__games">
               GAMES
             </li>
-            <li className="nav__news">NEWS</li>
             <li className="nav__careers" onClick={() => navigate("/cart")}>
               CART
             </li>
