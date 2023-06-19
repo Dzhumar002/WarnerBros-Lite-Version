@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 .container{
     margin: -1em auto;
     max-width: 85%;
-=======
-.container {
-  margin: -1em auto;
-  max-width: fit-content;
->>>>>>> 3490e2e49891d52f48670409b483bf5de1cb6837
 }
 
 .cont_items {
@@ -142,7 +136,6 @@
   border-radius: 3px;
 }
 
-<<<<<<< HEAD
 .filter_func:hover{
     transition: 1.5s;
     background: linear-gradient(90deg, 
@@ -150,18 +143,6 @@
     rgba(0, 0, 0, 0.541) 15%, 
     rgba(0, 0, 0, 0.452) 80%, 
     rgba(0, 0, 0, 0) 100%);
-=======
-.filter_func:hover {
-  transition: 1.5s;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.541) 15%,
-    rgba(0, 0, 0, 0.452) 80%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  /* background-color: rgba(0, 0, 0, 0.347); */
->>>>>>> 3490e2e49891d52f48670409b483bf5de1cb6837
 }
 
 .block_toUpdate {
@@ -180,7 +161,6 @@
   width: inherit;
 }
 
-<<<<<<< HEAD
 .box_toUpdate{
     margin: 5% auto;
     width: 100%;
@@ -197,24 +177,6 @@
     color: aliceblue;
     text-shadow: 0 0 2px white, 0 0 4px white,
     0px 0px 30px rgba(0, 136, 255, 0.881), 0 0 45px rgb(180, 220, 255);
-=======
-.box_toUpdate {
-  margin: 5% auto;
-  width: 100%;
-  display: flex;
-  /* justify-content: space-evenly; */
-  align-items: center;
-  flex-direction: column;
-}
-
-.box_toUpdate > h3 {
-  margin: 5% auto;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2em;
-  color: aliceblue;
-  text-shadow: 0px 0px 0.5em rgb(0, 136, 255);
->>>>>>> 3490e2e49891d52f48670409b483bf5de1cb6837
 }
 
 .box_toUpdate > p {
@@ -239,7 +201,6 @@
   transition: 0.3s;
 }
 
-<<<<<<< HEAD
 .featured{
     width: 100%;
 }
@@ -252,22 +213,12 @@
     color: white;
     text-shadow: 0 0 2px white, 0 0 4px white, 0 0 5px white,
     0px 0px 20px  rgb(0, 136, 255), 0px 0px 40px  rgb(0, 136, 255), 0px 0px 65px  rgb(0, 136, 255)   
-=======
-.featured > h3 {
-  margin: 0.5em 0;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-  color: white;
-  text-shadow: 0px 0px 20px rgb(0, 136, 255);
->>>>>>> 3490e2e49891d52f48670409b483bf5de1cb6837
 }
 
 .featured_cards {
   width: 100%;
 }
 
-<<<<<<< HEAD
 .img_left{
     display: flex;
     /* justify-content: space-between; */
@@ -287,23 +238,6 @@
 
 .featured_item>#border{
     height: 0.5px;
-=======
-.img_left {
-  display: flex;
-  justify-content: space-between;
-}
-
-.img_right {
-  display: flex;
-  justify-content: space-between;
-}
-
-.featured_items {
-}
-
-.featured_items > #border {
-  height: 0.5px;
->>>>>>> 3490e2e49891d52f48670409b483bf5de1cb6837
 }
 
 .meta {
@@ -313,7 +247,6 @@
   color: aliceblue;
 }
 
-<<<<<<< HEAD
 .right{
     display: flex;
     flex-direction: row-reverse;
@@ -344,11 +277,3 @@ width: 60%;
 .feat_items_content>p{
     margin-top: 1%;
 }
-=======
-.meta > img {
-  width: 60%;
-}
-.feat_items_content {
-  word-wrap: break-word;
-}
->>>>>>> 3490e2e49891d52f48670409b483bf5de1cb6837
