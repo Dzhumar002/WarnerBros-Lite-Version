@@ -60,14 +60,13 @@ body {
 }
 
 .demo_switch {
-  position: relative;
-  margin: 0 0.1em;
-  width: 14vw;
-  max-width: 200px;
-  height: 0.3em;
-  background-color: rgba(128, 128, 128, 0.321);
-  border: none;
-  height: 2vh;
+    position: relative;
+    margin: 0 0.1em;
+    width: 14vw; 
+    max-width: 200px;
+    height: 0.7em; 
+    background-color: rgba(128, 128, 128, 0.321);
+    border: none
 }
 
 .demo_switch:hover {
