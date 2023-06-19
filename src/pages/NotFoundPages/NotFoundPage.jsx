@@ -12,9 +12,9 @@ const NotFoundPage = () => {
         <div className="notfound__main">
           <h2>Not Found Page</h2>
         </div>
-        <div className="notfoundtext2">
+        {/* <div className="notfoundtext2">
           <h2>Look like You're lost</h2>
-        </div>
+        </div> */}
         <div className="notfound__button">
           <button id="flyhome">
             <svg

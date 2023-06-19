@@ -163,12 +163,13 @@ img {
   font-size: 17px;
   padding: 0.6em 1.5em;
   margin-left: 12.8vw;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 .edit__button {
   margin-left: 13vw;
   margin-top: 5vh;
+  margin-bottom: 15vh;
 }
 
 .send__cart {
@@ -215,6 +216,7 @@ img {
   font-weight: 800;
   font-size: 3.2rem;
   margin-top: 12vh;
+  margin-bottom: 5vh;
 }
 
 @keyframes flicker {
@@ -395,7 +397,7 @@ p {
 }
 .conversation {
   margin-top: 12vh;
-  margin-bottom: 10vh;
+  margin-bottom: 13vh;
 }
 
 .conversation h3 {
@@ -408,6 +410,7 @@ p {
   font-weight: 600;
   font-size: 1.8rem;
   margin-left: 5vw;
+  margin-bottom: 5vh;
 }
 
 .card__conversation {
@@ -485,6 +488,7 @@ p {
 
 #price__button {
   --green: #1bfd9c;
+
   font-size: 15px;
   padding: 0.7em 2.7em;
   letter-spacing: 0.06em;
@@ -535,6 +539,6 @@ p {
 }
 
 #price__block {
-  margin-left: 12vw;
-  margin-top: 5vh;
+  margin-left: 13vw;
+  margin-top: 4vh;
 }

@@ -2,16 +2,16 @@ import React, { useEffect } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import "../ProductList/ProductList.css";
 import Filter from "../FilterThing/Filter";
-// import { useDispatch, useSelector } from "react-redux";
-// import { getProducts } from "../../store/products/productsActions";
+import { useDispatch, useSelector } from "react-redux";
+import { getProducts } from "../../store/products/productsActions";
 
-const ProductList = () => {
-  // const { products } = useSelector((state) => state.products);
-  // const dispatch = useDispatch();
+const ProductList = ({ currentData }) => {
+  const { products } = useSelector((state) => state.products);
+  const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(getProducts());
-  // }, []);
+  useEffect(() => {
+    dispatch(getProducts());
+  }, []);
 
   return (
     <div>
@@ -20,22 +20,11 @@ const ProductList = () => {
       </div>
 
       <div id="list__block">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {products ? (
+          currentData().map((item) => <ProductCard item={item} key={item.id} />)
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );

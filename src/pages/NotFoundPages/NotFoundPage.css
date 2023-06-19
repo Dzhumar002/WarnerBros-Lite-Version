@@ -40,22 +40,6 @@
   }
 }
 
-.notfoundtext2 {
-  display: flex;
-  justify-content: end;
-  margin-right: 5vw;
-  padding-top: 15vh;
-  animation: flicker 1.5s infinite alternate;
-  color: #f0f0f0;
-  text-shadow:
-      /* белый свет */ 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff,
-    /* зеленый свет */ 0 0 11px rgb(0, 255, 68), 0 0 20px rgb(49, 247, 85),
-    0 0 30px rgb(28, 245, 79), 0 0 55px rgb(23, 240, 77),
-    0 0 80px rgb(75, 245, 86);
-  font-weight: 800;
-  font-size: 2.4rem;
-}
-
 #flyhome {
   display: flex;
   align-items: center;
@@ -69,6 +53,7 @@
   border: none;
   letter-spacing: 0.05em;
   border-radius: 16px;
+  margin-top: 45vh;
 }
 
 #flyhome svg {

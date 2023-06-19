@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Navbar/Navbar.css";
 import Search from "../NavSearch/Search";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { handleLogout } from "../../store/auth/authActions";
+import { authListener, handleLogout } from "../../store/auth/authActions";
 import { clearInputs } from "../../store/auth/authSlice";
+import { ADMIN } from "../../helpers/consts";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.auth);
-
+  useEffect(() => {
+    dispatch(authListener());
+  }, []);
   return (
     <div>
       <div className="navbar__container">
@@ -28,13 +31,20 @@ const Navbar = () => {
             <li className="nav__home" onClick={() => navigate("/")}>
               HOME
             </li>
-            <li onClick={() => navigate("/games")} className="nav__games">
+            <li onClick={() => navigate("/game")} className="nav__games">
               GAMES
             </li>
             <li className="nav__news">NEWS</li>
             <li className="nav__careers" onClick={() => navigate("/cart")}>
               CART
             </li>
+            {user === ADMIN ? (
+              <li className="nav__careers" onClick={() => navigate("/admin")}>
+                ADMIN
+              </li>
+            ) : (
+              <></>
+            )}
             <li className="nav__paly" onClick={() => navigate("/playtest")}>
               PLAYTEST
             </li>
@@ -43,33 +53,34 @@ const Navbar = () => {
 
         <div className="nav__inp">
           <Search />
-
-          {user ? (
-            <>
-              <p
-                className="login"
-                onClick={() => {
-                  dispatch(handleLogout());
-                  dispatch(clearInputs());
-                  navigate("/");
-                }}
-              >
-                Log out
-              </p>
-            </>
-          ) : (
-            <>
-              <p
-                className="login"
-                onClick={() => {
-                  navigate("/login");
-                  dispatch(clearInputs());
-                }}
-              >
-                Log in
-              </p>
-            </>
-          )}
+          <div id="login__logout">
+            {user ? (
+              <>
+                <p
+                  className="login"
+                  onClick={() => {
+                    dispatch(handleLogout());
+                    dispatch(clearInputs());
+                    navigate("/");
+                  }}
+                >
+                  Log out
+                </p>
+              </>
+            ) : (
+              <>
+                <p
+                  className="login"
+                  onClick={() => {
+                    navigate("/login");
+                    dispatch(clearInputs());
+                  }}
+                >
+                  Log in
+                </p>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>
