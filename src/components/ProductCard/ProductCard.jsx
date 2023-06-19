@@ -1,11 +1,12 @@
 import React from "react";
 import "../ProductCard/ProductCard.css";
 import { useNavigate } from "react-router-dom";
-const ProductCard = () => {
+
+const ProductCard = ({ item }) => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="myCard" onClick={() => navigate("/details")}>
+      <div className="myCard" onClick={() => navigate("/details/" + item.id)}>
         <div className="innerCard">
           <div className="frontSide">
             <img
@@ -14,11 +15,11 @@ const ProductCard = () => {
                 borderTopRightRadius: "1rem",
               }}
               width={"190vw"}
-              height={"182vh"}
-              src="https://cdn.wbgames.com/media/502/conversions/thumb_1644443888-sized.jpg"
+              height={"209vh"}
+              src={item.cardImageOne}
               alt="Harry"
             />
-            <p>Harry Poter: Magik Awakened</p>
+            <p>{item.cardTitleOne}</p>
           </div>
           <div className="backSide">
             <img
@@ -27,11 +28,11 @@ const ProductCard = () => {
                 borderTopRightRadius: "1rem",
               }}
               width={"190vw"}
-              height={"199vh"}
-              src="https://www.giantbomb.com/a/uploads/scale_medium/45/450707/3154683-73474972_107640597341999_4035494268515647488_n%20%281%29.jpg"
+              height={"209vh"}
+              src={item.cardImageTwo}
               alt="Harry"
             />
-            <p> Price: 13.85$</p>
+            <p>{item.cardPrice}</p>
           </div>
         </div>
       </div>

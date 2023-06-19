@@ -2,14 +2,15 @@
   display: flex;
   justify-content: space-evenly;
   position: fixed;
+  /* align-items: center; */
   margin-top: 5vh;
-  width: 100%;
+  width: 98%;
   z-index: 1;
 }
 .nav__list ul {
   display: flex;
   flex-direction: row;
-  gap: 5vw;
+  gap: 4vw;
   list-style: none;
   cursor: pointer;
   color: white;
@@ -32,6 +33,7 @@
 .nav__inp {
   display: flex;
   gap: 2vw;
+  margin-top: -2vh;
 }
 
 .login {
@@ -42,4 +44,8 @@
 
 .login:hover {
   text-shadow: 1px 1px 2px rgb(229, 207, 207), 0 0 1em blue, 0 0 0.2em blue;
+}
+
+#login__logout {
+  margin-top: 2vh;
 }

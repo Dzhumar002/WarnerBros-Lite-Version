@@ -12,9 +12,12 @@
   margin: 0;
 }
 
-image {
+.frontSide img,
+.backSide img {
   border-radius: 1rem;
+  margin-bottom: 3vh;
 }
+
 .innerCard {
   position: relative;
   width: 100%;
@@ -29,6 +32,10 @@ image {
   transform: rotateY(180deg);
 }
 
+.frontSide p,
+.backSide p {
+  margin-bottom: 2vh;
+}
 .frontSide,
 .backSide {
   position: absolute;
