@@ -15,18 +15,22 @@ const GamePage = () => {
 
   const [page, setPage] = useState(1);
 
-  const itemsPerPage = 20;
-  const count = Math.ceil(products.length / itemsPerPage);
+  const itemsPerPage = 6;
+  // console.log(Math.ceil(products.length / itemsPerPage));
+  const count = [];
+  for (let i = 1; i <= Math.ceil(products.length / itemsPerPage); i++) {
+    count.push(i);
+  }
 
   function currentData() {
     const begin = (page - 1) * itemsPerPage;
     const end = begin + itemsPerPage;
     return products.slice(begin, end);
   }
-  console.log(currentData);
-  const handleChange = (_, p) => {
+  const handleChange = (p) => {
     setPage(p);
   };
+
   return (
     <div>
       <div className="head__block">
@@ -36,7 +40,7 @@ const GamePage = () => {
       <div className="products__block">
         <ProductList currentData={currentData} />
         <div className="pagination__block">
-          <Pagination count={count} page={page} onChange={handleChange} />
+          <Pagination count={count} page={page} handleChange={handleChange} />
         </div>
       </div>
     </div>
