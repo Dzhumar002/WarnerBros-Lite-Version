@@ -48,4 +48,22 @@
 
 #login__logout {
   margin-top: 2vh;
+  display: flex;
+  gap: 2vw;
+}
+
+sup {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff,
+    0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+}
+
+#user {
+  color: white;
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+  text-shadow:
+      /* белый свет */ 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff,
+    /* зеленый свет */ 0 0 11px #0fa, 0 0 20px #0fa, 0 0 30px #0fa,
+    0 0 55px #0fa, 0 0 80px #0fa;
 }

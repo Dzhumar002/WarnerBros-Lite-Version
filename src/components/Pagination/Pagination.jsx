@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../Pagination/Pagination.css";
 const Pagination = ({ count, page, handleChange }) => {
-  console.log(count);
+  // console.log(count);
 
   return (
     <div>

@@ -119,7 +119,7 @@ const Carousel = () => {
                       <h4>
                         Harry Potter: Magic Awakened Soft Launch Announcement
                       </h4>
-                      <p>Read More {">>"}</p>
+                      <p onClick={() => navigate("/game")}>Read More {">>"}</p>
                     </div>
                   </div>
                   <div id="border"></div>
@@ -139,7 +139,7 @@ const Carousel = () => {
                         WARNER BROS. GAMES AND DC ANNOUNCE SUICIDE SQUAD: KILL
                         THE JUSTICE LEAGUE
                       </h4>
-                      <p>Read More {">>"}</p>
+                      <p onClick={() => navigate("/game")}>Read More {">>"}</p>
                     </div>
                   </div>
                   <div id="border"></div>
@@ -158,7 +158,7 @@ const Carousel = () => {
                     <div className="feat_items_content">
                       <p>Gotham Knights</p>
                       <h4>WARNER BROS. GAMES AND DC ANNOUNCE GOTHAM KNIGHTS</h4>
-                      <p>Read More {">>"}</p>
+                      <p onClick={() => navigate("/game")}>Read More {">>"}</p>
                     </div>
                   </div>
                   <div id="border"></div>
@@ -175,7 +175,7 @@ const Carousel = () => {
                     <div className="feat_items_content">
                       <p>Mortal Kombat 11: Aftermath </p>
                       <h4>Official Mortal Kombat 11: Aftermath Announcement</h4>
-                      <p>Read More {">>"}</p>
+                      <p onClick={() => navigate("/game")}>Read More {">>"}</p>
                     </div>
                   </div>
                 </div>

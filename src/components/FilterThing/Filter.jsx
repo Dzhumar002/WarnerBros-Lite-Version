@@ -1,8 +1,10 @@
 import React from "react";
 import "../FilterThing/Filter.css";
+import Search from "../NavSearch/Search";
 const Filter = () => {
   return (
-    <div>
+    <div id="filter__searchblock">
+      <Search />
       <div className="filter_block">
         <div id="border"></div>
         <div className="filter_cont">

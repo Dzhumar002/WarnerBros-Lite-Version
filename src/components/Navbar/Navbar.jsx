@@ -35,7 +35,7 @@ const Navbar = () => {
               GAMES
             </li>
             <li className="nav__careers" onClick={() => navigate("/cart")}>
-              CART
+              CART<sup>6</sup>
             </li>
             {user === ADMIN ? (
               <li className="nav__careers" onClick={() => navigate("/admin")}>
@@ -51,10 +51,11 @@ const Navbar = () => {
         </div>
 
         <div className="nav__inp">
-          <Search />
+          {/* <Search /> */}
           <div id="login__logout">
             {user ? (
               <>
+                {user ? <div id="user">{user}</div> : <></>}
                 <p
                   className="login"
                   onClick={() => {

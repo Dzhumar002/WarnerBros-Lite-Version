@@ -5,7 +5,7 @@ import { API } from "../../helpers/consts";
 
 export const getProducts = createAsyncThunk(
   "@products/getProducts",
-  async (_, { dispatch }) => {
+  async (search, { dispatch }) => {
     const { data } = await axios(API);
     dispatch(setProducts(data));
   }

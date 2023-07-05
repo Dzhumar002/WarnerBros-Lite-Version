@@ -1,0 +1,5 @@
+#filter__searchblock {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}

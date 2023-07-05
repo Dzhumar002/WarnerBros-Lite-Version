@@ -7,13 +7,16 @@
   width: 8vw;
   padding: 10px 0px 10px 40px;
   border-radius: 9999px;
-  border: solid 1px #333;
+  border: solid 2px #eceaea;
   transition: all 0.2s ease-in-out;
   outline: none;
+  background-color: transparent;
   opacity: 0.8;
+  color: white;
 }
 
 .container-input svg {
+  color: white;
   position: absolute;
   top: 50%;
   left: 10px;

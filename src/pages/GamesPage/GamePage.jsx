@@ -5,6 +5,7 @@ import Carusel from "../../components/CaruselGames/CaruselGame";
 import Pagination from "../../components/Pagination/Pagination";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../store/products/productsActions";
+import Search from "../../components/NavSearch/Search";
 const GamePage = () => {
   const { products } = useSelector((state) => state.products);
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const GamePage = () => {
 
   const [page, setPage] = useState(1);
 
-  const itemsPerPage = 6;
+  const itemsPerPage = 8;
   // console.log(Math.ceil(products.length / itemsPerPage));
   const count = [];
   for (let i = 1; i <= Math.ceil(products.length / itemsPerPage); i++) {

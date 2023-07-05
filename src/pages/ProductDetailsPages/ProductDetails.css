@@ -490,7 +490,7 @@ p {
   --green: #1bfd9c;
 
   font-size: 15px;
-  padding: 0.7em 2.7em;
+  padding: 1em 3em;
   letter-spacing: 0.06em;
   position: relative;
   font-family: inherit;
@@ -541,4 +541,9 @@ p {
 #price__block {
   margin-left: 13vw;
   margin-top: 4vh;
+}
+
+.delete__cart {
+  margin-left: 13vw;
+  margin-top: 6vh;
 }
